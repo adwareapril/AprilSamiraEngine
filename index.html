@@ -1,0 +1,29 @@
+<canvas id="screen" style="width: 100%; "></canvas>
+<script>
+
+    //Init Canvas
+    const canvas = document.getElementById("screen");
+    const context = canvas.getContext('2d');
+
+    //Game Loop
+    function gameLoop ()
+    {
+        //ResizeCanvas
+        canvas.width = window.innerWidth;
+        canvas.hight = canvas.getContext('2d');
+
+        //Update screen
+        context.fillStyle = 'Black';
+        
+
+        //Infinite loop
+        setTimeout(gameLoop,0);
+    }
+
+    window.onload() = function()
+    {
+        gameLoop();
+    }
+
+
+</script>
