@@ -24,7 +24,11 @@
   const HEIGHT = 200, HALF_HEIGHT = 100;
 
   // FPS
+<<<<<<< HEAD
   const FPS = 60;
+=======
+  const FPS = 150;
+>>>>>>> April
   const cycleDelay = Math.floor(1000 / FPS);
   var oldCycleTime = 0;
   var cycleCount = 0;
@@ -78,6 +82,11 @@
   var playerMoveX = 0;
   var playerMoveY = 0;
   var playerMoveAngle = 0;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> April
   
   // handle user input
   document.onkeydown = function(event) {
@@ -254,6 +263,13 @@
       context.moveTo(playerMapX, playerMapY);
       context.lineTo(playerMapX + Math.sin(playerAngle) * 5, playerMapY + Math.cos(playerAngle) * 5);
       context.stroke();
+<<<<<<< HEAD
+=======
+
+     consol.log(cycleCount);
+
+    
+>>>>>>> April
     }
     
     // fix wall layout
